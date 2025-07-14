@@ -7,7 +7,7 @@ const Library = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/books');
+        const response = await fetch('https://school-managment-systembk.onrender.com/api/books');
         if (!response.ok) {
           throw new Error('Failed to fetch books');
         }
