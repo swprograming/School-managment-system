@@ -12,7 +12,7 @@ const UpcomingExams = () => {
   // Fetch exams from backend
   useEffect(() => {
     const fetchExams = async () => {
-      const response = await fetch("http://localhost:5000/api/upcoming-exams");
+      const response = await fetch("https://school-managment-systembk.onrender.com/api/upcoming-exams");
       const data = await response.json();
       console.log(data); // Log the exams data to check the structure
       setExams(data);
