@@ -40,7 +40,7 @@ const StudentDashboard = () => {
                 }
 
                 // Set token in the headers for authentication
-                const response = await axios.get('http://localhost:5000/api/student/', {
+                const response = await axios.get('https://school-managment-systembk.onrender.com/api/student/', {
                     headers: {
                         Authorization: `Bearer ${token}`, // Send token in Authorization header
                     }
