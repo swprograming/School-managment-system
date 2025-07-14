@@ -9,7 +9,7 @@ const UpdateProfile = () => {
 
     useEffect(() => {
         const fetchProfile = async () => {
-            const response = await fetch("http://localhost:5000/api/student", {
+            const response = await fetch("https://school-managment-systembk.onrender.com/api/student", {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 },
