@@ -23,7 +23,7 @@ const Result = () => {
                 const studentId = decodedToken.studentId;
 
                 // Fetch results for the specific student
-                const response = await fetch(`http://localhost:5000/api/result/${studentId}/result`, {
+                const response = await fetch(`https://school-managment-systembk.onrender.com/api/result/${studentId}/result`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
