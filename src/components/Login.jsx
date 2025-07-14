@@ -14,7 +14,7 @@ const Login = () => {
     setError(""); // Clear previous error messages
 
     try {
-      const response = await fetch("https://school-managment-systembk.onrender.com/api/login", {
+      const response = await fetch("https://school-managment-systembk.onrender.com/api/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
