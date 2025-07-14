@@ -12,7 +12,7 @@ const Assignments = () => {
    // to fetch assignments from backend
    useEffect(() => {
     const fetchAssignments = async () => {
-        const response = await fetch("http://localhost:5000/api/assignment");
+        const response = await fetch("https://school-managment-systembk.onrender.com/api/assignment");
         const data = await response.json()
         setAssignments(data)
     };
